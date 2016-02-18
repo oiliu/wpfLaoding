@@ -1,0 +1,15 @@
+F:\StudioOnline\WpfApplication1\WpfApplication1\obj\Debug\UserControl1.baml
+F:\StudioOnline\WpfApplication1\WpfApplication1\obj\Debug\UserControl1.g.cs
+F:\StudioOnline\WpfApplication1\WpfApplication1\obj\Debug\App.g.cs
+F:\StudioOnline\WpfApplication1\WpfApplication1\obj\Debug\MainWindow.g.cs
+F:\StudioOnline\WpfApplication1\WpfApplication1\obj\Debug\MainWindow.baml
+F:\StudioOnline\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
+F:\StudioOnline\WpfApplication1\WpfApplication1\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\StudioOnline\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe
+F:\StudioOnline\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.pdb
+F:\StudioOnline\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1_MarkupCompile.cache
+F:\StudioOnline\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1_MarkupCompile.lref
+F:\StudioOnline\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.g.resources
+F:\StudioOnline\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.Properties.Resources.resources
+F:\StudioOnline\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.exe
+F:\StudioOnline\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.pdb
