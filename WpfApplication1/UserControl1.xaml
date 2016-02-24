@@ -75,6 +75,7 @@
             <Button Content="" HorizontalAlignment="Left" Margin="90,-100,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Button_Click_1" BorderBrush="#00FFFF" Background="#00FFFF"></Button>
             <Button Content="" HorizontalAlignment="Left" Margin="130,-100,-20,0" VerticalAlignment="Top" Width="30" Height="30" Click="Button_Click_1" BorderBrush="#0000FF" Background="#0000FF"></Button>
             <Button Content="" HorizontalAlignment="Left" Margin="170,-100,-60,0" VerticalAlignment="Top" Width="30" Height="30" Click="Button_Click_1" BorderBrush="#8000FF" Background="#8000FF"></Button>
+            <Button Content="second" HorizontalAlignment="Left" Margin="25,272,0,-121" VerticalAlignment="Top" Width="75" Height="30" Click="Button_Click_2"/>
         </Grid>
     </Viewbox>
 </UserControl>

@@ -31,6 +31,7 @@ namespace WpfApplication1
             animationTimer = new DispatcherTimer(DispatcherPriority.ContextIdle, Dispatcher);
             animationTimer.Interval = new TimeSpan(0, 0, 0, 0, 90);
         }
+
         #region Private Methods
         private void Start()
         {
@@ -46,6 +47,7 @@ namespace WpfApplication1
 
         private void HandleAnimationTick(object sender, EventArgs e)
         {
+            //这就转圈了，
             SpinnerRotate.Angle = (SpinnerRotate.Angle + 36) % 360;
         }
 
@@ -90,6 +92,7 @@ namespace WpfApplication1
         }
         #endregion
 
+        #region 后加函数
         bool IsStart = false;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -123,9 +126,16 @@ namespace WpfApplication1
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
-            Color color1 = 
+            Color color1 =
                 (Color)System.Windows.Media.ColorConverter.ConvertFromString(btn.Background.ToString());
             SetColor(color1);
+        }
+        #endregion
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Second s = new Second();
+            s.ShowDialog();
         }
     }
 }

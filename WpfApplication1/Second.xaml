@@ -1,0 +1,52 @@
+﻿<Window x:Class="WpfApplication1.Second"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Second" Height="600" Width="600" WindowStartupLocation="CenterScreen" SizeChanged="Window_SizeChanged_1">
+    <Grid  x:Name="LayoutRoot" MouseLeftButtonDown="Grid_MouseLeftButtonDown_1">
+        <Rectangle Fill="Blue" Height="100" Width="100" Margin="10,20,30,-10"></Rectangle>
+        <Rectangle Height="100" Width="20">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="red" />
+            </Rectangle.Fill>
+        </Rectangle>
+        <Ellipse Fill="Black" Height="10" Width="10">
+
+        </Ellipse>
+        <Canvas>
+            <Thumb x:Name="thumb1" Background="Red" Height="50" Width="100"
+               DragDelta="DragDelta" DragStarted="DragStarted" DragCompleted="DragCompleted" 
+               Canvas.Left="35" 
+               Canvas.Top="121" Margin="10,10,184,211" />
+        </Canvas>
+        <Canvas>
+            <Rectangle Height="100" Width="100" x:Name="RectangleLinear">
+                <Rectangle.Fill>
+                    <LinearGradientBrush>
+                        <LinearGradientBrush.StartPoint>
+                            <Point X="0" Y="0"></Point>
+                        </LinearGradientBrush.StartPoint>
+                        <LinearGradientBrush.EndPoint>
+                            <Point X="1" Y="0"></Point>
+                        </LinearGradientBrush.EndPoint>
+
+                        <LinearGradientBrush.GradientStops>
+                            <GradientStop Offset="2" Color="Black"/>
+                            <GradientStop Offset="0" Color="Red"/>
+                        </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Label Content="1" x:Name="labelText"></Label>
+            <Slider x:Name="slider1" Canvas.Left="117" Canvas.Top="417" Width="364" Maximum="100" Minimum="1" SmallChange="1" IsSnapToTickEnabled="True" IsMoveToPointEnabled="True"/>
+            <TextBox Width="51" Canvas.Left="125" Canvas.Top="388" Text="{Binding ElementName=slider1,Path=Value,Mode=OneWay}"></TextBox>
+            <TextBox Width="51" Canvas.Left="191" Canvas.Top="388" >
+                <TextBox.Text>
+                    <Binding ElementName="slider1" Path="Value" Mode="OneWay"/>
+                </TextBox.Text>
+            </TextBox>
+            <Button Height="20" Width="20" Canvas.Left="489" Canvas.Top="416" Click="Button_Click_1" MouseLeftButtonDown="Button_MouseLeftButtonDown_1">
+                
+            </Button>
+        </Canvas>
+    </Grid>
+</Window>
