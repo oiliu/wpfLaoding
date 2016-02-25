@@ -13,6 +13,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 
+using System.Timers;
+
 namespace WpfApplication1
 {
     /// <summary>
@@ -23,12 +25,20 @@ namespace WpfApplication1
         #region Data
         private readonly DispatcherTimer animationTimer;
         #endregion
+        Timer timer1;
+        
+
 
         public UserControl1()
         {
             InitializeComponent();
+            //实现计时器功能，
+            //animationTimer = new DispatcherTimer(DispatcherPriority.ContextIdle, Dispatcher);
+            //animationTimer.Interval = new TimeSpan(0, 0, 0, 0, 90);
 
-            animationTimer = new DispatcherTimer(DispatcherPriority.ContextIdle, Dispatcher);
+
+            //1，实例一个计时器，2，设置频率，3，设置事件
+            animationTimer = new DispatcherTimer();
             animationTimer.Interval = new TimeSpan(0, 0, 0, 0, 90);
         }
 
@@ -40,6 +50,12 @@ namespace WpfApplication1
         }
 
         private void Stop()
+        {
+            animationTimer.Stop();
+            animationTimer.Tick -= HandleAnimationTick;
+        }
+
+        private void StartIsStop()
         {
             animationTimer.Stop();
             animationTimer.Tick -= HandleAnimationTick;

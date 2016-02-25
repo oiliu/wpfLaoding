@@ -48,12 +48,12 @@ namespace WpfApplication1
         bool isContinued = false;
         private void HandleAnimationTick(object sender, EventArgs e)
         {
-
             if (isContinued)
             {
                 SliderValueChange();
             }
         }
+
         private void Grid_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
         {
             //窗口拖动
@@ -148,6 +148,13 @@ namespace WpfApplication1
                 slider1Value++;
                 this.slider1.Value = slider1Value;
             }
+        }
+
+        private void SliderValueChang()
+        {
+            int[] ii = new int[] { 3, 2, 4, 9, 5, 20, 11 };
+
+
         }
     }
 }
